@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="3d texture" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/3d texture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option='-I&quot;C:\opencv\build\include&quot;' />
+					<Add directory="C:/Program Files (x86)/GnuWin32/include" />
+				</Compiler>
+				<Linker>
+					<Add option='-L&quot;C:\Program Files (x86)\GnuWin32\lib&quot;' />
+					<Add option='-L&quot;C:\opencv\build\x64\vc15\lib&quot;' />
+					<Add option='-L&quot;C:\Program Files (x86)\GnuWin32\lib&quot;' />
+					<Add library="&apos;tiff&apos;" />
+					<Add library="opencv_core410" />
+					<Add library="opencv_imgcodecs410" />
+					<Add library="opencv_highgui410" />
+					<Add library="opencv_imgproc410" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/3d texture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory='-L&quot;C:/opencv/build/include/opencv&quot;' />
+			<Add directory='-L&quot;C:/opencv/build/include/opencv2&quot;' />
+			<Add directory='-L&quot;C:/Program Files (x86)/gnuwin32/include&quot;' />
+			<Add directory="C:/Program Files (x86)/GnuWin32/include" />
+		</Compiler>
+		<Linker>
+			<Add option='-L&quot;C:\Program Files (x86)\GnuWin32\lib&quot;' />
+			<Add option="`pkg-config  --cflags --libs opencv&apos;" />
+			<Add library="C:/Program Files (x86)/GnuWin32/lib/libtiff.lib" />
+			<Add library="&apos;tiff&apos;" />
+		</Linker>
+		<Unit filename="fonction.cpp" />
+		<Unit filename="fonction.h" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
